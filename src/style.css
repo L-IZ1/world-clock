@@ -1,4 +1,7 @@
-body{
+.container{
     color: #C0B283;
     background-color: #373737;
+}
+footer{
+    text-align: center;
 }
