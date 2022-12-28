@@ -6,11 +6,12 @@
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+
 body{
     margin-top: 200px;
     font-family: 'Poppins', sans-serif;
+    
 }
-
 
 h1,
 h2, 
@@ -36,6 +37,7 @@ h2,
     font-size: 48px;
 }
 .container{
+    background-color: #F4F4F4;
     color: #373737;
     max-width: 600px;
     margin: 60px auto;
@@ -47,6 +49,7 @@ h2,
 }
 .container select{
     background-color: var(--secondary-color);
+    font-size: 34px;
     display: block;
     margin: 60px auto;
     padding: 16px;
