@@ -37,11 +37,11 @@
       <select id="clock">
         <option value="" selected>Select a city...</option>
         <option value="Europe/Freiburg">Freiburg 🇩🇪</option>
-        <option value="Europe/Paris">Paris 🇫🇷</option>
+        <option value="current">My location</option>
         <option value="America/Mexico_City">Mexico City 🇲🇽</option>
         <option value="Europe/Lons-le-Saunier">Lons-le-Saunier 🇫🇷</option>
       </select>
-      <div id="cities">
+      <div id="cities" class="cities">
         <div class="row" id="freiburg">
           <div class="col 6">
             <div class="city">
@@ -52,17 +52,15 @@
             </div>
           </div>
           <div class="col 6">
-            <div class="time">
-              <h2></h2>
-            </div>
+            <h2 class="time"></h2>
           </div>
         </div>
         <hr />
         <div class="row" id="paris">
           <div class="col 6">
             <div class="city">
-              <h2>Paris</h2>
-              <div class="date"><h4></h4></div>
+              <h2>My location</h2>
+              <div class="date"><h4 class="currentdate"></h4></div>
             </div>
           </div>
           <div class="col 6">
@@ -74,7 +72,7 @@
           <div class="col 6">
             <div class="city">
               <h2>Mexico City</h2>
-              <div class="date"><h4></h4></div>
+              <div class="date"><h4 class="currentdate"></h4></div>
             </div>
           </div>
           <div class="col 6">
@@ -86,7 +84,7 @@
           <div class="col 6">
             <div class="city">
               <h2>Lons-le-Saunier</h2>
-              <div class="date"><h4></h4></div>
+              <div class="date"><h4 class="currentdate"></h4></div>
             </div>
           </div>
           <div class="col 6">
@@ -94,7 +92,16 @@
           </div>
         </div>
       </div>
+      <div>
+        <input
+          type="button"
+          value="⟳ Refresh"
+          id="button"
+          onClick="refresh(this)"
+        />
+      </div>
     </div>
+
     <footer>
       Coded by Elise Petitjean
       <a

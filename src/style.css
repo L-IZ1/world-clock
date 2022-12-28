@@ -1,22 +1,18 @@
-
-
 :root {
     --primary-color: #DCD0C0;
     --secondary-color: #C0B283;
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-
 body{
-    margin-top: 200px;
-    font-family: 'Poppins', sans-serif;
-    
+    font-family: 'Poppins', sans-serif;  
+    color: #373737;
+    text-align: center;
 }
 
 h1,
-h2, 
-{
-    margin: 0;
+h2,{
+    margin: 0 auto;
 }
 
 .date{
@@ -26,64 +22,92 @@ h2,
 .time{
     font-size: 48px;
 }
+
+ .cities {
+    margin-bottom: 80px;
+ }
+
 .container h1 {
     font-size: 60px;
     line-height: 27px;
-    text-align: center;
-    color: #373737;
 }
 
 .container h2 {
     font-size: 48px;
 }
+
 .container{
+    margin: 40px 0 40px 0;
     background-color: #F4F4F4;
     color: #373737;
     max-width: 600px;
-    margin: 60px auto;
-    padding: 50px 100px 100px 50px;
+    padding: 100px 100px 100px 100px;
     border-radius: 10px;
-    text-align: center;
     box-shadow: var(--box-shadow);
-    font-family: 'Poppins', sans-serif;
 }
+
 .container select{
     background-color: var(--secondary-color);
-    font-size: 34px;
+    font-size: 28px;
     display: block;
     margin: 60px auto;
-    padding: 16px;
+    padding: 16px 16px;
     width: 80%;
     border: none;
     border-radius: 8px;
-    border-color: var(--secondary-color);
     text-align: center;
-    font-size: 20px;
+    border-color: var(--secondary-color);
     transition: all 100ms ease-in-out;
 }
+
 .container hr{
     color: var(--secondary-color);
     opacity: 0.5;
-    margin: 40px auto;
+    margin: 60px auto;
     padding: 2px;
     width: 80%;
 }
+
+#button {
+    background-color: var(--secondary-color);
+    border: none;
+    border-color: var(--secondary-color);
+    border-radius: 8px;
+    margin: 0 auto;
+    font-size: 28px;
+    display: block;
+    padding: 20px 20px 20px 20px;
+    max-width: 100%;
+    color: #373737;
+    text-align: center;
+    transition: all 100ms ease-in-out; 
+}
+
+#button:hover {
+    background-color: #373737;
+    border-color: #373737;
+    color: #DCD0C0;
+    transition: all 100ms ease-in-out;
+}
+
 footer{
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
-    color:  var(--secondary-color);
-    margin:0 auto;}
+    color: var(--secondary-color);
+    margin:0 auto;
+}
 
-.a{
-        transition: all 100ms ease-in-out;
-        text-decoration: underline;
-    }
-
-footer:hover {
+footer:hover{
     color: #373737;
+    font-size: 24px;
     text-decoration: none;
     cursor: pointer;
+}
+
+.a{
+    transition: all 100ms ease-in-out;
+    text-decoration: underline;
 }
 
 .fa-linkedin{
@@ -91,8 +115,8 @@ footer:hover {
 }
 
 .fa-github{
-        color: var(--secondary-color);
-    }
+    color: var(--secondary-color);
+}
 
 
 
