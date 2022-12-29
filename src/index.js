@@ -28,7 +28,7 @@ let selectLons=document.querySelector("#lons");
 if (selectLons) {
 let selectLonsDate=selectLons.querySelector(".date")
 let selectLonsTime=selectLons.querySelector(".time")
-let localTimeLons = moment().tz("Europe/Lons-le-Saunier");
+let localTimeLons = moment().tz("Europe/Paris");
 
 selectLonsDate.innerHTML=localTimeLons.format("dddd, MMMM Do, YYYY");
 selectLonsTime.innerHTML=localTimeLons.format("h:mm:ss [<small>]A[</small>]");
