@@ -14,7 +14,7 @@ selectFreiburgTime.innerHTML=localTimeFreiburg.format("h:mm:ss [<small>]A[</smal
 
 let selectMexico=document.querySelector("#mexico");
 if (selectMexico) {
-let selectMexicoDate=selectMexico.querySelector(".date");
+let selectMexicoDate=selectMexico.querySelector(".currentdate");
 let selectMexicoTime=selectMexico.querySelector(".time");
 let localTimeMexico = moment().tz("America/Mexico_City");
 
@@ -26,7 +26,7 @@ selectMexicoTime.innerHTML=localTimeMexico.format("h:mm:ss [<small>]A[</small>]"
 
 let selectLons=document.querySelector("#lons");
 if (selectLons) {
-let selectLonsDate=selectLons.querySelector(".date")
+let selectLonsDate=selectLons.querySelector(".currentdate")
 let selectLonsTime=selectLons.querySelector(".time")
 let localTimeLons = moment().tz("Europe/Paris");
 
