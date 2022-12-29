@@ -118,7 +118,9 @@ footer:hover{
     color: var(--secondary-color);
 }
 
-
-
-
-
+@media (max-width: 900px) {
+ h1 {
+        font-size: 38px;
+        line-height: 2;
+    }
+}
