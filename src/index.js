@@ -37,13 +37,13 @@ selectLonsTime.innerHTML=localTimeLons.format("h:mm:ss [<small>]A[</small>]");
 
 
 function displayCity(event) {
-let timeZone = event.target.value;
+let cityTimeZone = event.target.value;
 
-if(timeZone === "current"){
-timeZone = moment.tz.guess();
+if(cityTimeZone === "current") {
+cityTimeZone = moment.tz.guess();
 }
-let cityName = timeZone.replace("_", " ").split("/")[1];
-let cityTime = moment().tz(timeZone);
+let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+let cityTime = moment().tz(cityTimeZone);
 
 let citiesElement=document.querySelector("#cities");
 citiesElement.innerHTML =`
