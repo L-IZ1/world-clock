@@ -120,7 +120,7 @@ footer:hover{
 
 @media (max-width: 900px) {
  h1 {
-        font-size: 38px;
-        line-height: 2;
+        font-size: 34px;
+        line-height: 1.5;
     }
 }

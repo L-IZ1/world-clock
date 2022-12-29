@@ -48,8 +48,8 @@ let cityTime = moment().tz(cityTimeZone);
 let citiesElement=document.querySelector("#cities");
 citiesElement.innerHTML =`
 
- <div id="cities" class="cities">
-        <div class="row" id="freiburg">
+ <div class="cities">
+        <div class="row">
           <div class="col 6">
             <div class="city">
               <h2>${cityName}</h2>
